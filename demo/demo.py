@@ -1,3 +1,5 @@
+
+import sys
 from math import pi, sin, cos
 
 from direct.showbase.ShowBase import ShowBase
@@ -7,9 +9,17 @@ from direct.interval.IntervalGlobal import Sequence
 from panda3d.core import Point3
 
 
-class Tutorial(ShowBase):
+class Demo(ShowBase):
     def __init__(self):
         ShowBase.__init__(self)
+
+        # Disabling the mouse allows you to
+        # reposition the camera in code
+        self.disableMouse()
+
+        # Pressing escape will close the game
+        # All input commands are handled this way
+        self.accept('escape', sys.exit)
 
         # Load the environment model.
         self.scene = self.loader.loadModel("models/environment")
@@ -57,5 +67,5 @@ class Tutorial(ShowBase):
 
 
 def main():
-    game = Tutorial()
+    game = Demo()
     game.run()

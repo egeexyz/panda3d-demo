@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "tutorial"
+name = "demo"
 version = "0.1.0"
 description = "the Hello World tutorial from the Panda3D docs!"
 authors = ["egee-irl <brian@egee.io>"]
 license = "MIT"
 
 [tool.poetry.scripts]
-run = 'tutorial.tutorial:main'
+run = 'demo.demo:main'
 
 [tool.poetry.dependencies]
 python = "^3.8"
