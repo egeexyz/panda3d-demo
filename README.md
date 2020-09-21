@@ -9,3 +9,5 @@ First make sure [poetry](https://python-poetry.org/docs/) is installed. Then do:
 followed by
 
 `poetry run`
+
+An alternate version of this demo can be found in the [upstream](https://github.com/egee-irl/panda3d-demo/tree/upstream) branch.
